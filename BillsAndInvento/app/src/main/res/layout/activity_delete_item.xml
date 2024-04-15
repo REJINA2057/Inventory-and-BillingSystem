@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".AddingInventory">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="161dp"
+        android:layout_height="118dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20mm"
+        android:layout_marginTop="2mm"
+        app:srcCompat="@mipmap/logo4_foreground"/>
+
+    <TextView
+        android:id="@+id/delete_title"
+        android:layout_width="50mm"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18mm"
+        android:layout_marginTop="20mm"
+        android:layout_marginRight="5mm"
+        android:fontFamily="sans-serif-black"
+        android:text="Delete Details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#0868B6"
+        android:textSize="5mm" />
+    <View
+        android:id="@+id/delete_divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="30mm"
+        android:layout_marginLeft="1mm"
+        android:background="?android:attr/listDivider"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/delete_scanner"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20mm"-->
+<!--        android:layout_marginTop="34mm"-->
+<!--        android:text="Scan Bar Code"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:backgroundTint="#248511" />-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_marginTop="40mm"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1mm"
+            android:layout_marginTop="3mm"
+            android:fontFamily="sans-serif-light"
+            android:text="Product"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#0868B6"
+            android:textSize="3.5mm" />
+
+        <EditText
+            android:id="@+id/delete_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18mm"
+            android:layout_marginTop="2mm"
+            android:ems="13"
+            android:fontFamily="sans-serif-light"
+            android:inputType="text"
+            android:hint="Name"
+            android:textColor="#6A0868B6"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/delete_category"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1mm"
+            android:layout_marginTop="20mm"
+            android:fontFamily="sans-serif-light"
+            android:text="Category"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#0868B6"
+            android:textSize="3.5mm" />
+
+        <EditText
+            android:id="@+id/edit_delete_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18mm"
+            android:layout_marginTop="18mm"
+            android:ems="13"
+            android:fontFamily="sans-serif-light"
+            android:inputType="text"
+            android:hint="category"
+            android:textColor="#6A0868B6"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/Date_of_purchase"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1mm"
+            android:layout_marginTop="10mm"
+            android:fontFamily="sans-serif-light"
+            android:text="Date of purchse"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#0868B6"
+            android:textSize="3.5mm" />
+
+        <EditText
+            android:id="@+id/add_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18mm"
+            android:layout_marginTop="9mm"
+            android:ems="13"
+            android:fontFamily="sans-serif-light"
+            android:inputType="number|date"
+            android:hint="date"
+            android:textColor="#6A0868B6"
+            android:textStyle="italic"
+            />
+
+        <TextView
+            android:id="@+id/suppliername_delete"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1mm"
+            android:layout_marginTop="27mm"
+            android:fontFamily="sans-serif-light"
+            android:text="Supplier"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#0868B6"
+            android:textSize="3.5mm" />
+
+        <EditText
+            android:id="@+id/add_supplier_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18mm"
+            android:layout_marginTop="26mm"
+            android:ems="13"
+            android:fontFamily="sans-serif-light"
+            android:inputType="textPersonName"
+            android:hint="name"
+            android:textColor="#6A0868B6"
+            android:textStyle="italic"
+            />
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18mm"
+            android:layout_marginTop="40mm"
+            android:text="Delete Item"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#248511" />
+
+        <Button
+            android:id="@+id/delete_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45mm"
+            android:layout_marginTop="40mm"
+            android:text="Cancel"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#C13766"
+            />
+
+
+    </FrameLayout>
+</RelativeLayout>

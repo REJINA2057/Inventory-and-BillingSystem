@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".YearlyReport">
+
+
+    <ImageView
+        android:id="@+id/yearlyreportbackground"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundfive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@android:color/transparent"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="false">
+
+            <Button
+                android:id="@+id/salesreportbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="Sales Report"
+                app:backgroundTint="#B6B67B"
+                />
+
+            <Button
+                android:id="@+id/costreportbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="Cost Report"
+                app:backgroundTint="#B6B67B"
+                />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</layout>

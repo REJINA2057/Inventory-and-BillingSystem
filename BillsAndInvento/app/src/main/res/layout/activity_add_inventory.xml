@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".AddingInventory">
+
+    <ImageView
+        android:id="@+id/additembackground"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundfive"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/add_product" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/raleway_semibold_italic"
+        android:text="ADD PRODUCT"
+        android:textColor="#60605F"
+        android:textSize="3.5mm"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="?android:attr/listDivider"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/inventory_scanner"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20mm"-->
+<!--        android:layout_marginTop="30mm"-->
+<!--        android:onClick="deletecancelEvent"-->
+<!--        android:text="Scan Bar Code"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:backgroundTint="#248511" />-->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20mm"
+        android:layout_marginLeft="7mm"
+        android:layout_marginRight="5mm"
+        android:backgroundTint="@android:color/transparent"
+        android:background="@drawable/rounded_background"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="5mm"
+            android:layout_marginLeft="2mm"
+            android:layout_marginTop="7mm"
+            app:srcCompat="@drawable/resource_package" />
+
+        <EditText
+            android:id="@+id/add_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10mm"
+            android:layout_marginTop="5mm"
+            android:ems="13"
+            android:fontFamily="sans-serif-light"
+            android:hint="Product Name"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="7mm"
+            android:layout_marginLeft="2mm"
+            android:layout_marginTop="13mm"
+            app:srcCompat="@drawable/categorization" />
+
+        <EditText
+            android:id="@+id/add_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10mm"
+            android:layout_marginTop="14mm"
+            android:ems="13"
+            android:fontFamily="sans-serif-light"
+            android:hint="Category"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="7mm"
+            android:layout_marginLeft="2mm"
+            android:layout_marginTop="21mm"
+            app:srcCompat="@drawable/items" />
+
+        <EditText
+            android:id="@+id/add_no_of_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10mm"
+            android:layout_marginTop="22mm"
+            android:ems="13"
+            android:fontFamily="sans-serif-light"
+            android:hint="Qty"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="7mm"
+            android:layout_marginLeft="2mm"
+            android:layout_marginTop="30mm"
+            app:srcCompat="@drawable/agreement" />
+
+        <EditText
+            android:id="@+id/add_supplier_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10mm"
+            android:layout_marginTop="30mm"
+            android:ems="13"
+            android:fontFamily="sans-serif-light"
+            android:hint="Name"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="7mm"
+            android:layout_marginLeft="2mm"
+            android:layout_marginTop="37mm"
+            app:srcCompat="@drawable/telephone_call"/>
+
+
+        <EditText
+            android:id="@+id/add_supplier_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10mm"
+            android:layout_marginTop="37mm"
+            android:ems="13"
+            android:fontFamily="sans-serif-light"
+            android:hint="Number"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="7mm"
+            android:layout_marginLeft="2mm"
+            android:layout_marginTop="45mm"
+            app:srcCompat="@drawable/price_tag__1_"/>
+
+        <EditText
+            android:id="@+id/add_price_of_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10mm"
+            android:layout_marginTop="45mm"
+            android:ems="13"
+            android:fontFamily="sans-serif-light"
+            android:hint="amount"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10mm"
+            android:layout_marginTop="55mm"
+            android:text="Add Item"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#B6B67B" />
+
+        <Button
+            android:id="@+id/add_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35mm"
+            android:layout_marginTop="55mm"
+            android:onClick="cancelEvent"
+            android:text="Cancel"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#A57B89" />
+
+
+    </FrameLayout>
+</RelativeLayout>

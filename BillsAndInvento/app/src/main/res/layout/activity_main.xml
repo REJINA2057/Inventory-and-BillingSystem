@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DashBoard">
+
+        <ImageView
+            android:id="@+id/dashboardbackground"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/backgroundfive"
+            />
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/logout__1_"
+            android:layout_marginLeft="57mm"
+            android:layout_marginTop="2mm"
+            />
+
+        <ImageView
+            android:id="@+id/imageViewdashboard"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/layout"
+            />
+
+        <TextView
+            android:id="@+id/logo_title_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/raleway_semibold_italic"
+            android:text="DASHBOARD"
+            android:textColor="#60605F"
+            android:textSize="3.5mm"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="?android:attr/listDivider"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@android:color/transparent"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="false"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@android:color/transparent"
+                app:cardElevation="0dp"
+                app:cardUseCompatPadding="false"
+                >
+
+                <ImageView
+                    android:id="@+id/additem"
+                    android:layout_width="50dp"
+                    android:layout_height="10mm"
+                    android:layout_marginLeft="35dp"
+                    app:srcCompat="@drawable/add_product" />
+
+                <View
+                    android:layout_width="90dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="?android:attr/listDivider"/>
+
+                <TextView
+                    android:id="@+id/addproductdisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15mm"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="ADD PRODUCT"
+                    android:textColor="#191717"
+                    android:textSize="18dp" />
+            </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="190dp"
+            android:backgroundTint="@android:color/transparent"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="false">
+            <ImageView
+                android:id="@+id/availableDetails"
+                android:layout_width="50dp"
+                android:layout_height="10mm"
+                android:layout_marginLeft="8mm"
+                app:srcCompat="@drawable/resource_package" />
+
+            <View
+                android:layout_width="90dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="25dp"
+                android:background="?android:attr/listDivider"/>
+
+            <TextView
+                android:id="@+id/availabilitydisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2mm"
+                android:layout_marginTop="15mm"
+                android:fontFamily="sans-serif-condensed"
+                android:text="AVAILABLE ITEMS"
+                android:textColor="#191717"
+                android:textSize="18dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="190dp"
+                android:layout_marginRight="300dp"
+                android:backgroundTint="@android:color/transparent"
+                app:cardElevation="0dp"
+                app:cardUseCompatPadding="false">
+
+                <ImageView
+                    android:id="@+id/goodsboughtdetails"
+                    android:layout_width="50dp"
+                    android:layout_height="10mm"
+                    android:layout_marginLeft="9mm"
+                    app:srcCompat="@drawable/consider" />
+
+                <View
+                    android:layout_width="90dp"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="?android:attr/listDivider" />
+                <TextView
+                    android:id="@+id/goodsboughtdisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2mm"
+                    android:layout_marginTop="15mm"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="PRODUCT DETAILS"
+                    android:textColor="#191717"
+                    android:textSize="18dp" />
+            </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@android:color/transparent"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="false"
+            >
+            <ImageView
+                android:id="@+id/bill"
+                android:layout_width="40dp"
+                android:layout_height="10mm"
+                android:layout_marginLeft="40dp"
+                app:srcCompat="@drawable/bill" />
+
+            <View
+                android:layout_width="90dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="?android:attr/listDivider"/>
+
+            <TextView
+                android:id="@+id/billdisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5mm"
+                android:layout_marginTop="15mm"
+                android:fontFamily="sans-serif-condensed"
+                android:text="BILLING"
+                android:textColor="#191717"
+                android:textSize="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="340dp"
+            android:backgroundTint="@android:color/transparent"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="false">
+
+            <ImageView
+                android:id="@+id/buttonreg"
+                android:layout_width="40dp"
+                android:layout_height="10mm"
+                android:layout_marginLeft="40dp"
+                app:srcCompat="@drawable/user" />
+
+            <View
+                android:layout_width="90dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/registerdisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5mm"
+                android:layout_marginTop="15mm"
+                android:layout_marginRight="30dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="ADD ADMIN"
+                android:textColor="#191717"
+                android:textSize="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="340dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@android:color/transparent"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="false"
+            >
+            <ImageView
+                android:id="@+id/yearlyreport"
+                android:layout_width="40dp"
+                android:layout_height="10mm"
+                android:layout_marginLeft="60dp"
+                app:srcCompat="@drawable/inform" />
+
+            <View
+                android:layout_width="90dp"
+                android:layout_height="3dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/yearlyreportdisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5mm"
+                android:layout_marginTop="15mm"
+                android:fontFamily="sans-serif-condensed"
+                android:text="YEARLY REPORT"
+                android:textColor="#191717"
+                android:textSize="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</layout>
